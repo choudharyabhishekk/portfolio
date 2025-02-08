@@ -44,9 +44,15 @@ export default function Page() {
                   <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-colors">
                     Get In Touch
                   </button>
-                  <button className="px-8 py-3 rounded-full bg-transparent border border-white text-white font-semibold hover:bg-white/10 transition-colors">
-                    Download CV
-                  </button>
+                  <ShineBorder
+                    className="inline-block" // This ensures proper sizing
+                    color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                    borderRadius={9999}
+                  >
+                    <button className="px-8 py-3 rounded-full bg-transparent text-white font-semibold transition-colors w-full">
+                      Download CV
+                    </button>
+                  </ShineBorder>
                 </div>
 
                 <div className="flex items-center gap-6 mt-4">
@@ -189,7 +195,7 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
               <div className="space-y-3">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -199,15 +205,14 @@ export default function Page() {
                   Get in Touch
                 </h2>
                 <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Want to chat? Just shoot me a dm{" "}
+                  Want to chat? Just shoot me an email{" "}
                   <Link
-                    href={DATA.contact.social.X.url}
+                    href={`mailto:${DATA.contact.email}`}
                     className="text-blue-500 hover:underline"
                   >
-                    with a direct question on twitter
+                    here
                   </Link>{" "}
-                  and I&apos;ll respond whenever I can. I will ignore all
-                  soliciting.
+                  and I&apos;ll respond whenever I can.
                 </p>
               </div>
             </BlurFade>

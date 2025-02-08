@@ -6,6 +6,7 @@
 import React from "react";
 import { ModeToggle } from "./mode-toggle";
 import BlurFade from "./magicui/blur-fade";
+import { ShineBorder } from "./magicui/shine-border";
 const Nav = () => {
   return (
     <BlurFade delay={0.03 * 5}>
@@ -27,6 +28,9 @@ const Nav = () => {
             </li>
             <li className="hover:text-neutral-500">
               <a href="#work">Experience</a>
+            </li>
+            <li className="hover:text-neutral-500">
+              <a href="#skills">Stack</a>
             </li>
             <li className="hover:text-neutral-500">
               <a href="#cv">Resume</a>
