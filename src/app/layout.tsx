@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -57,11 +56,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-4  px-6",
+          "min-h-screen bg-background font-sans antialiased max-w-4xl mx-auto py-4  px-6",
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
         </ThemeProvider>
       </body>

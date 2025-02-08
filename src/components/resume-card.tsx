@@ -100,7 +100,7 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed">
                 {description}
               </p>
             </motion.div>

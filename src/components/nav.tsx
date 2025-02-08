@@ -1,8 +1,8 @@
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@radix-ui/react-tooltip";
+// import {
+//   Tooltip,
+//   TooltipContent,
+//   TooltipTrigger,
+// } from "@radix-ui/react-tooltip";
 import React from "react";
 import { ModeToggle } from "./mode-toggle";
 import BlurFade from "./magicui/blur-fade";
@@ -32,7 +32,7 @@ const Nav = () => {
               <a href="#cv">Resume</a>
             </li>
 
-            <li>
+            {/* <li>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <ModeToggle />
@@ -41,7 +41,7 @@ const Nav = () => {
                   <p>Theme</p>
                 </TooltipContent>
               </Tooltip>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

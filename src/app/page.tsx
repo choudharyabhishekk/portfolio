@@ -7,8 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import { Spotlight } from "@/components/ui/spotlight";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-import Markdown from "react-markdown";
-
+import { Github, Linkedin, Mail } from "lucide-react";
+import { ShineBorder } from "@/components/magicui/shine-border";
+import { MagicCard } from "@/components/magicui/magic-card";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -20,14 +21,15 @@ export default function Page() {
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         />
-
         {/* <span className="bg-gradient-to-r from-[#ff7b72] via-[#ff758c] to-[#9c40ff] bg-clip-text text-transparent">
           Abhishek Choudhary
-          
+          className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-violet-400 via-pink-200 to-orange-200 text-transparent bg-clip-text"
+
+          bg-gradient-to-br from-white from-30% dark:to-[#af73d8] to-[#af73d8] 
         </span> */}
         <section id="hero">
           <div className="mx-auto flex flex-col items-center w-full max-w-2xl space-y-8">
-            <div className="flex-col flex  space-y-1.5">
+            <div className="flex-col flex space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-violet-400 via-pink-200 to-orange-200 text-transparent bg-clip-text"
@@ -37,37 +39,50 @@ export default function Page() {
               <BlurFadeText delay={BLUR_FADE_DELAY} text={DATA.description} />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
-              <div className="flex flex-col items-center sm:flex-row gap-4">
-                <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-colors">
-                  Get In Touch
-                </button>
-                <button className="px-8 py-3 rounded-full bg-transparent border border-white text-white font-semibold hover:bg-white/10 transition-colors">
-                  Download CV
-                </button>
+              <div className="flex flex-col items-center space-y-6">
+                <div className="flex flex-col items-center sm:flex-row gap-4">
+                  <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-colors">
+                    Get In Touch
+                  </button>
+                  <button className="px-8 py-3 rounded-full bg-transparent border border-white text-white font-semibold hover:bg-white/10 transition-colors">
+                    Download CV
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-6 mt-4">
+                  <a
+                    href="https://github.com/choudharyabhishekk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-neutral-500 transition-colors"
+                    aria-label="GitHub"
+                  >
+                    <Github size={24} />
+                  </a>
+
+                  <a
+                    href="https://linkedin.com/in/choudharyabhishekk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-neutral-500 transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin size={24} />
+                  </a>
+
+                  <a
+                    href="mailto:choudharyabhishekk@gmail.com"
+                    className="hover:text-neutral-500 transition-colors"
+                    aria-label="Email"
+                  >
+                    <Mail size={24} />
+                  </a>
+                </div>
               </div>
             </BlurFade>
           </div>
         </section>
 
-        <section id="skills">
-          <div className="flex max-w-3xl min-h-0 mt-10 justify-center items-center flex-col gap-y-3">
-            <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <div className="inline-flex rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Skills
-              </div>
-              {/* <h2 className="text-xl font-bold text-center">Skills</h2> */}
-            </BlurFade>
-            <div className="flex flex-wrap gap-1">
-              {DATA.skills.map((skill, id) => (
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <Badge variant="secondary" key={skill}>
-                    {skill}
-                  </Badge>
-                </BlurFade>
-              ))}
-            </div>
-          </div>
-        </section>
         <section id="projects">
           <div className="space-y-12 w-full py-12">
             <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -87,7 +102,7 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 gap-6 mx-auto">
               {DATA.projects.map((project, id) => (
                 <BlurFade
                   key={project.title}
@@ -109,8 +124,24 @@ export default function Page() {
             </div>
           </div>
         </section>
+        <section id="skills">
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <h2 className="text-xl font-bold ">Skills</h2>
+            </BlurFade>
+            <div className="flex flex-wrap gap-1 mx-auto">
+              {DATA.skills.map((skill, id) => (
+                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                  <Badge variant="secondary" key={skill}>
+                    {skill}
+                  </Badge>
+                </BlurFade>
+              ))}
+            </div>
+          </div>
+        </section>
         <section id="work">
-          <div className="flex min-h-0 flex-col gap-y-3">
+          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <h2 className="text-xl font-bold">Work Experience</h2>
             </BlurFade>
@@ -135,7 +166,7 @@ export default function Page() {
           </div>
         </section>
         <section id="education">
-          <div className="flex min-h-0 flex-col gap-y-3">
+          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className="text-xl font-bold">Education</h2>
             </BlurFade>

@@ -4,9 +4,8 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATAA = {
   name: "Abhishek Choudhary",
   initials: "AC",
-  url: "https://abhicodes.me",
+  url: "https://abhix.io",
   location: "Greater Toronto Area, ON",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: " Building Marketors, Explaining Tech @geeksgyaan,",
 
   avatarUrl: "/me.png",
