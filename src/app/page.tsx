@@ -7,7 +7,15 @@ import { Badge } from "@/components/ui/badge";
 import { Spotlight } from "@/components/ui/spotlight";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import {
+  CodeXml,
+  Cog,
+  FileCheck,
+  Github,
+  Hammer,
+  Linkedin,
+  Mail,
+} from "lucide-react";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { MagicCard } from "@/components/magicui/magic-card";
 const BLUR_FADE_DELAY = 0.04;
@@ -35,8 +43,12 @@ export default function Page() {
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-violet-400 via-pink-200 to-orange-200 text-transparent bg-clip-text"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+              />{" "}
+              <BlurFadeText
+                className="text-base/relaxed"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.description}
               />
-              <BlurFadeText delay={BLUR_FADE_DELAY} text={DATA.description} />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <div className="flex flex-col items-center space-y-6">
@@ -132,20 +144,66 @@ export default function Page() {
         <section id="skills">
           <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <h2 className="text-xl font-bold mb-3">Skills</h2>
+              <h2 className="text-xl font-bold mb-3 ">Skills & Technologies</h2>
             </BlurFade>
-            <div className="flex flex-wrap gap-1 mx-auto">
-              {DATA.skills.map((skill, id) => (
+
+            <div className="flex flex-wrap gap-2 justify-items-center">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex gap-2 items-center">
+                  <CodeXml size={18} />
+                  <h2 className="text-md w-28 font-bold ">Languages</h2>
+                </div>
+              </BlurFade>
+              {DATA.languages.map((skill, id) => (
                 <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <Badge
-                    variant="secondary"
-                    key={skill}
-                    className="cursor-pointer"
-                  >
+                  <Badge variant="secondary" className="cursor-pointer">
                     {skill}
                   </Badge>
                 </BlurFade>
               ))}
+            </div>
+
+            <div className="flex flex-row gap-2 my-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex gap-2 items-center">
+                  <Hammer size={18} />
+                  <h2 className="text-md w-28 font-bold">Technologies</h2>
+                </div>
+              </BlurFade>
+
+              <div className="flex flex-wrap gap-2">
+                {DATA.technologies.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex justify-items-center  gap-2 ">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex gap-2 items-center">
+                  <Cog size={18} />
+                  <h2 className="text-md w-28 font-bold ">Concepts</h2>
+                </div>
+              </BlurFade>
+              <div className="flex flex-wrap gap-2">
+                {DATA.concepts.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -198,7 +256,7 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <ShineBorder color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}>
+          <ShineBorder color="gray">
             <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
               <BlurFade delay={BLUR_FADE_DELAY * 16}>
                 <div className="space-y-3">

@@ -21,7 +21,7 @@ const Nav = () => {
             className="group flex flex-1 list-none items-center justify-center space-x-1 gap-8"
           >
             <li className="text-lg font-bold">
-              <a href="/">Abhishek</a>
+              <a href="/">Abhix</a>
             </li>
             <li className="hover:text-neutral-500">
               <a href="#projects">Projects</a>
@@ -30,22 +30,11 @@ const Nav = () => {
               <a href="#work">Experience</a>
             </li>
             <li className="hover:text-neutral-500">
-              <a href="#skills">Stack</a>
+              <a href="#contact">Contact</a>
             </li>
             <li className="hover:text-neutral-500">
               <a href="#cv">Resume</a>
             </li>
-
-            {/* <li>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <ModeToggle />
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Theme</p>
-                </TooltipContent>
-              </Tooltip>
-            </li> */}
           </ul>
         </div>
       </nav>

@@ -74,7 +74,7 @@ export const DATA = {
       start: "Nov 2021",
       end: "Aug 2023",
       description:
-        "Bootstrapped a digital marketing agency, providing services like content marketing, SEO, and web development to clients.",
+        "Founded a digital marketing agency, providing services like content marketing, SEO, and web development to clients.",
     },
     {
       company: "Geeksgyaan.com",
@@ -106,6 +106,43 @@ export const DATA = {
       end: "2021",
     },
   ],
+  languages: [
+    "TypeScript",
+    "JavaScript",
+    "Kotlin",
+    "C#",
+    "PHP",
+    "HTML5",
+    "CSS3",
+    "SQL",
+  ],
+  technologies: [
+    "React",
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "PostgreSQL",
+    "Docker",
+    "Android Studio",
+    "AWS",
+    "WordPress",
+    "Tailwind CSS",
+    "SASS",
+    "Git",
+    "CMS",
+    "Figma",
+  ],
+  concepts: [
+    "MVC",
+    "REST APIs",
+    "Headless CMS",
+    "Serverless backends",
+    "Cloudflare Functions",
+    "GraphQL",
+    "Prisma ORM",
+    "SEO",
+  ],
+
   projects: [
     {
       title: "Internship Platform",
