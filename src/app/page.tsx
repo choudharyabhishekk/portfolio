@@ -53,17 +53,29 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <div className="flex flex-col items-center space-y-6">
                 <div className="flex flex-col items-center sm:flex-row gap-4">
-                  <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-colors">
-                    Get In Touch
-                  </button>
+                  <Link
+                    href={`mailto:${DATA.contact.email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100 transition-colors">
+                      Get In Touch
+                    </button>
+                  </Link>
                   <ShineBorder
                     className="inline-block" // This ensures proper sizing
                     color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                     borderRadius={9999}
                   >
-                    <button className="px-8 py-3 rounded-full bg-transparent text-white font-semibold transition-colors w-full">
-                      Download CV
-                    </button>
+                    <Link
+                      href="/resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="px-8 py-3 rounded-full bg-transparent text-white font-semibold transition-colors w-full">
+                        Download CV
+                      </button>
+                    </Link>
                   </ShineBorder>
                 </div>
 

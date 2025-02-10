@@ -33,7 +33,9 @@ const Nav = () => {
               <a href="#contact">Contact</a>
             </li>
             <li className="hover:text-neutral-500">
-              <a href="#cv">Resume</a>
+              <a href="/resume.pdf" target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
         </div>
