@@ -142,10 +142,9 @@ export default function Page() {
                     key={project.title}
                     title={project.title}
                     description={project.description}
-                    dates={project.dates}
                     tags={project.technologies}
                     image={project.image}
-                    video={project.video}
+                    // video={project.video}
                     links={project.links}
                   />
                 </BlurFade>
@@ -256,7 +255,7 @@ export default function Page() {
               >
                 <ResumeCard
                   key={education.school}
-                  href={education.href}
+                  // href={education.href}
                   logoUrl={education.logoUrl}
                   altText={education.school}
                   title={education.school}
