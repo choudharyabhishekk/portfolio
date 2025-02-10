@@ -131,7 +131,7 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 gap-6 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto">
               {DATA.projects.map((project, id) => (
                 <BlurFade
                   key={project.title}
@@ -285,8 +285,27 @@ export default function Page() {
                     >
                       here
                     </Link>{" "}
-                    and I&apos;ll respond whenever I can.
+                    and I&apos;ll respond quickly.
                   </p>
+                  <div className="flex justify-center items-center gap-6 mt-6">
+                    <a
+                      href="https://linkedin.com/in/choudharyabhishekk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-neutral-500 transition-colors"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin size={20} />
+                    </a>
+
+                    <a
+                      href="mailto:choudharyabhishekk@gmail.com"
+                      className="hover:text-neutral-500 transition-colors"
+                      aria-label="Email"
+                    >
+                      <Mail size={20} />
+                    </a>
+                  </div>
                 </div>
               </BlurFade>
             </div>
