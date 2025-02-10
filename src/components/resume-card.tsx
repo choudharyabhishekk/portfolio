@@ -30,11 +30,10 @@ export const ResumeCard = ({
   description,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(true);
-
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
       e.preventDefault();
-      setIsExpanded(!isExpanded);
+      window.open(href, "_blank");
     }
   };
 

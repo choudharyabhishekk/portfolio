@@ -101,9 +101,8 @@ export default function Page() {
                     I love building things
                   </h2>
                   <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    I&apos;ve worked on a variety of projects, from full stack
-                    web applications to complex mobile apps. Here are a few of
-                    my favorites.
+                    I&apos;ve worked on a variety of full stack projects. Here
+                    are a few of my favorites.
                   </p>
                 </div>
               </div>
@@ -133,12 +132,16 @@ export default function Page() {
         <section id="skills">
           <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <h2 className="text-xl font-bold ">Skills</h2>
+              <h2 className="text-xl font-bold mb-3">Skills</h2>
             </BlurFade>
             <div className="flex flex-wrap gap-1 mx-auto">
               {DATA.skills.map((skill, id) => (
                 <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <Badge variant="secondary" key={skill}>
+                  <Badge
+                    variant="secondary"
+                    key={skill}
+                    className="cursor-pointer"
+                  >
                     {skill}
                   </Badge>
                 </BlurFade>
@@ -195,28 +198,30 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
-            <BlurFade delay={BLUR_FADE_DELAY * 16}>
-              <div className="space-y-3">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Contact
+          <ShineBorder color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}>
+            <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
+              <BlurFade delay={BLUR_FADE_DELAY * 16}>
+                <div className="space-y-3">
+                  <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                    Contact
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                    Get in Touch
+                  </h2>
+                  <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Want to chat? Just shoot me an email{" "}
+                    <Link
+                      href={`mailto:${DATA.contact.email}`}
+                      className="text-blue-500 hover:underline"
+                    >
+                      here
+                    </Link>{" "}
+                    and I&apos;ll respond whenever I can.
+                  </p>
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Get in Touch
-                </h2>
-                <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Want to chat? Just shoot me an email{" "}
-                  <Link
-                    href={`mailto:${DATA.contact.email}`}
-                    className="text-blue-500 hover:underline"
-                  >
-                    here
-                  </Link>{" "}
-                  and I&apos;ll respond whenever I can.
-                </p>
-              </div>
-            </BlurFade>
-          </div>
+              </BlurFade>
+            </div>
+          </ShineBorder>
         </section>
       </main>
     </>

@@ -11,6 +11,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { MagicCard } from "./magicui/magic-card";
+import { ShineBorder } from "./magicui/shine-border";
+import { Button } from "./ui/button";
 
 interface Props {
   title: string;
@@ -42,13 +44,6 @@ export function ProjectCard({
   className,
 }: Props) {
   return (
-    // [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]
-    // <Card
-    //   className={
-    //     "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-    //   }
-    // >
-
     <MagicCard
       className={
         "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 p-2 ease-out h-full"
@@ -96,7 +91,7 @@ export function ProjectCard({
           <div className=" flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
-                className="px-2 py-0 text-[12px] cursor-pointer"
+                className="px-2 py-0 text-[12px] cursor-default"
                 variant="secondary"
                 key={tag}
               >
@@ -108,17 +103,17 @@ export function ProjectCard({
       </CardContent>
       <CardFooter className="px-2 flex flex-col items-start py-2">
         {links && links.length > 0 && (
-          <div className="flex flex-row flex-wrap items-end gap-2">
+          <div className="flex flex-row flex-wrap items-start gap-2">
             {links?.map((link, idx) => (
               <Link href={link?.href} key={idx} target="_blank">
-                <Badge
-                  variant="outline"
+                <Button
+                  variant="secondary"
                   key={idx}
-                  className="flex gap-2 px-2 py-1 text-[12px]"
+                  className=" flex gap-2 px-3 text-[12px] cursor-pointer hover:border-gray-400"
                 >
                   {link.icon}
                   {link.type}
-                </Badge>
+                </Button>
               </Link>
             ))}
           </div>
