@@ -37,10 +37,10 @@ export default function Page() {
         </span> */}
         <section id="hero">
           <div className="mx-auto flex flex-col items-center w-full max-w-2xl space-y-8">
-            <div className="flex-col flex space-y-1.5">
+            <div className="flex-col items-center flex space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-violet-400 via-pink-200 to-orange-200 text-transparent bg-clip-text"
+                className="text-4xl sm:text-center font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-violet-400 via-pink-200 to-orange-200 text-transparent bg-clip-text"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />{" "}
@@ -152,7 +152,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <section id="skills">
+        {/* <section id="skills">
           <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold mb-3 ">Skills & Technologies</h2>
@@ -217,7 +217,77 @@ export default function Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <section id="skills">
+  <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
+    <BlurFade delay={BLUR_FADE_DELAY * 9}>
+      <h2 className="text-xl font-bold mb-3">Skills & Technologies</h2>
+    </BlurFade>
+
+    {/* Languages Section */}
+    <div className="flex flex-col md:flex-row gap-2 mb-4">
+      <BlurFade delay={BLUR_FADE_DELAY * 9}>
+        <div className="flex w-36 gap-2 items-center">
+          <CodeXml size={18} />
+          <h2 className="text-md font-bold">Languages</h2>
+        </div>
+      </BlurFade>
+      <div className="flex flex-wrap gap-2">
+        {DATA.languages.map((skill, id) => (
+          <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+            <Badge variant="secondary" className="cursor-pointer">
+              {skill}
+            </Badge>
+          </BlurFade>
+        ))}
+      </div>
+    </div>
+
+    {/* Technologies Section */}
+    <div className="flex flex-col md:flex-row  gap-2 mb-4">
+      <BlurFade delay={BLUR_FADE_DELAY * 9}>
+        <div className="flex w-36 gap-2 items-center">
+          <Hammer size={18} />
+          <h2 className="text-mdfont-bold">Technologies</h2>
+        </div>
+      </BlurFade>
+      <div className="flex flex-wrap gap-2">
+        {DATA.technologies.map((skill, id) => (
+          <BlurFade
+            key={skill}
+            delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+          >
+            <Badge variant="secondary" className="cursor-pointer">
+              {skill}
+            </Badge>
+          </BlurFade>
+        ))}
+      </div>
+    </div>
+
+    {/* Concepts Section */}
+    <div className="flex flex-col md:flex-row   gap-2">
+      <BlurFade delay={BLUR_FADE_DELAY * 9}>
+        <div className="flex gap-2 w-36 items-center">
+          <Cog size={18} />
+          <h2 className="text-md  font-bold">Concepts</h2>
+        </div>
+      </BlurFade>
+      <div className="flex flex-wrap gap-2">
+        {DATA.concepts.map((skill, id) => (
+          <BlurFade
+            key={skill}
+            delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+          >
+            <Badge variant="secondary" className="cursor-pointer">
+              {skill}
+            </Badge>
+          </BlurFade>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
         <section id="work">
           <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
