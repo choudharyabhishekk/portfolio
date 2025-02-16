@@ -122,6 +122,8 @@ export const DATA = {
     "Node.js",
     "MongoDB",
     "PostgreSQL",
+    "Prisma ORM",
+    "GraphQL",
     "Docker",
     "Android Studio",
     "AWS",
@@ -138,12 +140,37 @@ export const DATA = {
     "Headless CMS",
     "Serverless backends",
     "Cloudflare Functions",
-    "GraphQL",
-    "Prisma ORM",
+ 
     "SEO",
   ],
 
   projects: [
+      {
+      title: "AI PDF Note Taker",
+      href: "https://github.com/choudharyabhishekk/ai-pdf",
+      active: true,
+      description:
+         "Developed an AI-powered PDF Chat Tool allowing users to upload PDFs, ask questions, take notes, and save them seamlessly",     technologies: [
+        "TypeScript",
+        "Next js",
+        "Langchain",
+        "Gemini API",
+        "Convex db",
+      ],
+      image: "/PDF.jpg",
+      links: [
+              {
+          type: "Website",
+          href: "#",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/choudharyabhishekk/ai-pdf",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
     {
       title: "Internship Platform",
       href: "https://internship-i37i.onrender.com/",
@@ -191,7 +218,7 @@ export const DATA = {
       image: "/store.png",
     },
     {
-      title: "eCommerce App",
+      title: "eCommerce Android App",
       href: "https://github.com/choudharyabhishekk/ecommerce",
       active: true,
       description:
@@ -211,26 +238,6 @@ export const DATA = {
         },
       ],
     },
-    {
-      title: "eCommerce App",
-      href: "https://github.com/choudharyabhishekk/ecommerce",
-      active: true,
-      description:
-        "An eCommerce Android app that enables users to seamlessly browse and shop for products, manage their cart efficiently, and complete secure checkouts, all while providing a responsive and smooth experience across various devices.",
-      technologies: [
-        "Kotlin",
-        "Android Studio",
-        "Firebase Realtime Database",
-        "Firebase Auth",
-      ],
-      image: "/android.png",
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/choudharyabhishekk/ecommerce",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-    },
+  
   ],
 } as const;

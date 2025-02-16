@@ -29,12 +29,7 @@ export default function Page() {
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         />
-        {/* <span className="bg-gradient-to-r from-[#ff7b72] via-[#ff758c] to-[#9c40ff] bg-clip-text text-transparent">
-          Abhishek Choudhary
-          className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-violet-400 via-pink-200 to-orange-200 text-transparent bg-clip-text"
-
-          bg-gradient-to-br from-white from-30% dark:to-[#af73d8] to-[#af73d8] 
-        </span> */}
+    
         <section id="hero">
           <div className="mx-auto flex flex-col items-center w-full max-w-2xl space-y-8">
             <div className="flex-col items-center flex space-y-1.5">
@@ -51,8 +46,8 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
-              <div className="flex flex-col items-center space-y-6">
-                <div className="flex flex-col items-center sm:flex-row gap-4">
+              <div className="flex flex-col justify-center items-center space-y-6">
+                <div className="flex flex-row items-center sm:flex-row gap-4">
                   <Link
                     href={`mailto:${DATA.contact.email}`}
                     target="_blank"
@@ -337,7 +332,6 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <ShineBorder color="gray">
             <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
               <BlurFade delay={BLUR_FADE_DELAY * 16}>
                 <div className="space-y-3">
@@ -379,7 +373,6 @@ export default function Page() {
                 </div>
               </BlurFade>
             </div>
-          </ShineBorder>
         </section>
       </main>
     </>

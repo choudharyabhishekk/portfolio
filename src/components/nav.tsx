@@ -12,6 +12,7 @@ const Nav = () => {
 
   return (
     <BlurFade delay={0.03 * 5}>
+
   <nav
   aria-label="Main"
   data-orientation="horizontal"
@@ -19,6 +20,7 @@ const Nav = () => {
     isMenuOpen ? "rounded-3xl" : "rounded-full"
   }`}
 >
+
         <div className="flex w-full items-center justify-between md:hidden">
           <div className="text-lg font-bold">
             <a href="/">Abhix</a>
