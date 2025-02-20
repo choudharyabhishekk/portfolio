@@ -47,7 +47,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <div className="flex flex-col justify-center items-center space-y-6">
-                <div className="flex flex-row items-center sm:flex-row gap-4">
+                <div className="flex flex-row items-center gap-3 sm:flex-row md:gap-4">
                   <Link
                     href={`mailto:${DATA.contact.email}`}
                     target="_blank"
@@ -67,7 +67,7 @@ export default function Page() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="px-8 py-3 rounded-full bg-transparent text-white font-semibold transition-colors w-full">
+                      <button className=" px-8 py-3 rounded-full bg-transparent text-white font-semibold transition-colors w-full">
                         Download CV
                       </button>
                     </Link>

@@ -150,12 +150,14 @@ export const DATA = {
       href: "https://github.com/choudharyabhishekk/ai-pdf",
       active: true,
       description:
-         "Developed an AI-powered PDF Chat Tool allowing users to upload PDFs, ask questions, take notes, and save them seamlessly",     technologies: [
+         "Built an AI-powered PDF Chat Tool allowing users to upload PDFs, ask questions, take notes, and save them as documents",     technologies: [
         "TypeScript",
-        "Next js",
+        "Next.js",
         "Langchain",
         "Gemini API",
-        "Convex db",
+        "Convex database",
+        "Stripe API",
+
       ],
       image: "/PDF.jpg",
       links: [
@@ -183,7 +185,7 @@ export const DATA = {
         "Redux",
         "Node.js",
         "Tailwind CSS",
-        "JWT",
+        "MongoDB",
         "Cloudinary",
         "REST APIs",
       ],
@@ -206,7 +208,7 @@ export const DATA = {
       href: "https://github.com/choudharyabhishekk/online-store?tab=readme-ov-file",
       active: true,
       description:
-        "An e-commerce platform built with ASP.NET Core MVC. It includes a user-friendly customer interface, an admin panel for store management, user authentication via ASP.NET Identity, and a mobile-responsive design using Bootstrap.",
+        "An e-commerce platform with a user-friendly customer interface, an admin panel for store management, and a mobile-responsive design using Bootstrap.",
       technologies: ["ASP.NET Core", "EF Core", "Identity", "Bootstrap"],
       links: [
         {
@@ -222,7 +224,7 @@ export const DATA = {
       href: "https://github.com/choudharyabhishekk/ecommerce",
       active: true,
       description:
-        "An eCommerce Android app that enables users to seamlessly browse and shop for products, manage their cart efficiently, and complete secure checkouts, all while providing a responsive and smooth experience across various devices.",
+        "An eCommerce Android app where users can browse and shop for products, manage their cart, and complete secure checkouts, all while providing a responsive experience across various devices.",
       technologies: [
         "Kotlin",
         "Android Studio",
