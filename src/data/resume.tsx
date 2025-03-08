@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-
 export const DATA = {
   name: "Abhishek Choudhary",
   initials: "AC",
@@ -140,28 +139,29 @@ export const DATA = {
     "Headless CMS",
     "Serverless backends",
     "Cloudflare Functions",
- 
+
     "SEO",
   ],
 
   projects: [
-      {
-      title: "AI PDF Note Taker",
-      href: "https://github.com/choudharyabhishekk/ai-pdf",
+    {
+      title: "AI PDF Notes",
+      href: "https://aipdfnotes.vercel.app/",
       active: true,
       description:
-         "Built an AI-powered PDF Chat Tool allowing users to upload PDFs, ask questions, take notes, and save them as documents",     technologies: [
+        "Built an AI-powered PDF Chat Tool allowing users to upload PDFs, ask questions, take notes, and save them as documents",
+      technologies: [
         "TypeScript",
         "Next.js",
         "Langchain",
         "Gemini API",
         "Convex database",
         "Stripe API",
-
       ],
       image: "/PDF.jpg",
+      // video: "./aipdf.mov",
       links: [
-              {
+        {
           type: "Website",
           href: "#",
           icon: <Icons.globe className="size-3" />,
@@ -240,6 +240,5 @@ export const DATA = {
         },
       ],
     },
-  
   ],
 } as const;
