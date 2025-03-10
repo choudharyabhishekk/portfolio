@@ -29,7 +29,7 @@ export default function Page() {
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
         />
-    
+
         <section id="hero">
           <div className="mx-auto flex flex-col items-center w-full max-w-2xl space-y-8">
             <div className="flex-col items-center flex space-y-1.5">
@@ -139,7 +139,7 @@ export default function Page() {
                     description={project.description}
                     tags={project.technologies}
                     image={project.image}
-                    // video={project.video}
+                    video={project.video}
                     links={project.links}
                   />
                 </BlurFade>
@@ -214,75 +214,78 @@ export default function Page() {
           </div>
         </section> */}
         <section id="skills">
-  <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
-    <BlurFade delay={BLUR_FADE_DELAY * 9}>
-      <h2 className="text-xl font-bold mb-3">Skills & Technologies</h2>
-    </BlurFade>
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <h2 className="text-xl font-bold mb-3">Skills & Technologies</h2>
+            </BlurFade>
 
-    {/* Languages Section */}
-    <div className="flex flex-col md:flex-row gap-2 mb-4">
-      <BlurFade delay={BLUR_FADE_DELAY * 9}>
-        <div className="flex w-36 gap-2 items-center">
-          <CodeXml size={18} />
-          <h2 className="text-md font-bold">Languages</h2>
-        </div>
-      </BlurFade>
-      <div className="flex flex-wrap gap-2">
-        {DATA.languages.map((skill, id) => (
-          <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-            <Badge variant="secondary" className="cursor-pointer">
-              {skill}
-            </Badge>
-          </BlurFade>
-        ))}
-      </div>
-    </div>
+            {/* Languages Section */}
+            <div className="flex flex-col md:flex-row gap-2 mb-4">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex w-36 gap-2 items-center">
+                  <CodeXml size={18} />
+                  <h2 className="text-md font-bold">Languages</h2>
+                </div>
+              </BlurFade>
+              <div className="flex flex-wrap gap-2">
+                {DATA.languages.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
 
-    {/* Technologies Section */}
-    <div className="flex flex-col md:flex-row  gap-2 mb-4">
-      <BlurFade delay={BLUR_FADE_DELAY * 9}>
-        <div className="flex w-36 gap-2 items-center">
-          <Hammer size={18} />
-          <h2 className="text-mdfont-bold">Technologies</h2>
-        </div>
-      </BlurFade>
-      <div className="flex flex-wrap gap-2">
-        {DATA.technologies.map((skill, id) => (
-          <BlurFade
-            key={skill}
-            delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-          >
-            <Badge variant="secondary" className="cursor-pointer">
-              {skill}
-            </Badge>
-          </BlurFade>
-        ))}
-      </div>
-    </div>
+            {/* Technologies Section */}
+            <div className="flex flex-col md:flex-row  gap-2 mb-4">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex w-36 gap-2 items-center">
+                  <Hammer size={18} />
+                  <h2 className="text-mdfont-bold">Technologies</h2>
+                </div>
+              </BlurFade>
+              <div className="flex flex-wrap gap-2">
+                {DATA.technologies.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
 
-    {/* Concepts Section */}
-    <div className="flex flex-col md:flex-row   gap-2">
-      <BlurFade delay={BLUR_FADE_DELAY * 9}>
-        <div className="flex gap-2 w-36 items-center">
-          <Cog size={18} />
-          <h2 className="text-md  font-bold">Concepts</h2>
-        </div>
-      </BlurFade>
-      <div className="flex flex-wrap gap-2">
-        {DATA.concepts.map((skill, id) => (
-          <BlurFade
-            key={skill}
-            delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-          >
-            <Badge variant="secondary" className="cursor-pointer">
-              {skill}
-            </Badge>
-          </BlurFade>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Concepts Section */}
+            <div className="flex flex-col md:flex-row   gap-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex gap-2 w-36 items-center">
+                  <Cog size={18} />
+                  <h2 className="text-md  font-bold">Concepts</h2>
+                </div>
+              </BlurFade>
+              <div className="flex flex-wrap gap-2">
+                {DATA.concepts.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="work">
           <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -332,47 +335,47 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-            <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
-              <BlurFade delay={BLUR_FADE_DELAY * 16}>
-                <div className="space-y-3">
-                  <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                    Contact
-                  </div>
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                    Get in Touch
-                  </h2>
-                  <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Want to chat? Just shoot me an email{" "}
-                    <Link
-                      href={`mailto:${DATA.contact.email}`}
-                      className="text-blue-500 hover:underline"
-                    >
-                      here
-                    </Link>{" "}
-                    and I&apos;ll respond quickly.
-                  </p>
-                  <div className="flex justify-center items-center gap-6 mt-6">
-                    <a
-                      href="https://linkedin.com/in/choudharyabhishekk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-neutral-500 transition-colors"
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin size={20} />
-                    </a>
-
-                    <a
-                      href="mailto:choudharyabhishekk@gmail.com"
-                      className="hover:text-neutral-500 transition-colors"
-                      aria-label="Email"
-                    >
-                      <Mail size={20} />
-                    </a>
-                  </div>
+          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
+            <BlurFade delay={BLUR_FADE_DELAY * 16}>
+              <div className="space-y-3">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Contact
                 </div>
-              </BlurFade>
-            </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Get in Touch
+                </h2>
+                <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Want to chat? Just shoot me an email{" "}
+                  <Link
+                    href={`mailto:${DATA.contact.email}`}
+                    className="text-blue-500 hover:underline"
+                  >
+                    here
+                  </Link>{" "}
+                  and I&apos;ll respond quickly.
+                </p>
+                <div className="flex justify-center items-center gap-6 mt-6">
+                  <a
+                    href="https://linkedin.com/in/choudharyabhishekk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-neutral-500 transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin size={20} />
+                  </a>
+
+                  <a
+                    href="mailto:choudharyabhishekk@gmail.com"
+                    className="hover:text-neutral-500 transition-colors"
+                    aria-label="Email"
+                  >
+                    <Mail size={20} />
+                  </a>
+                </div>
+              </div>
+            </BlurFade>
+          </div>
         </section>
       </main>
     </>

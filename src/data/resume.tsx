@@ -158,12 +158,12 @@ export const DATA = {
         "Convex database",
         "Stripe API",
       ],
-      image: "/PDF.jpg",
-      // video: "./aipdf.mov",
+      // image: "/PDF.jpg",
+      video: "/aipdf.mp4",
       links: [
         {
           type: "Website",
-          href: "#",
+          href: "https://aipdfnotes.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -179,7 +179,9 @@ export const DATA = {
       active: true,
       description:
         "Developed a full-stack internship platform that enables students to apply to internships and track their applications. ",
-      image: "/internship.png",
+      // image: "/internship.png",
+      video: "/internship.mp4",
+
       technologies: [
         "React",
         "Redux",
@@ -208,8 +210,14 @@ export const DATA = {
       href: "https://github.com/choudharyabhishekk/online-store?tab=readme-ov-file",
       active: true,
       description:
-        "An e-commerce platform with a user-friendly customer interface, an admin panel for store management, and a mobile-responsive design using Bootstrap.",
-      technologies: ["ASP.NET Core", "EF Core", "Identity", "Bootstrap"],
+        "A full stack e-commerce platform with a user-friendly customer interface, an admin panel for store management, and a mobile-responsive design using Bootstrap.",
+      technologies: [
+        "ASP.NET Core",
+        "EF Core",
+        "ASP.NET Identity",
+        "Bootstrap",
+        "C#",
+      ],
       links: [
         {
           type: "GitHub",
