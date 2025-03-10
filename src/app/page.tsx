@@ -63,9 +63,10 @@ export default function Page() {
                     borderRadius={9999}
                   >
                     <Link
-                      href="/resume.pdf"
+                      href="/resume"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label="Open my resume in a new tab"
                     >
                       <button className=" px-8 py-3 rounded-full bg-transparent text-white font-semibold transition-colors w-full">
                         Download CV

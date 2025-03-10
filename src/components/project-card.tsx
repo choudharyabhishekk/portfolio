@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -46,12 +46,24 @@ export function ProjectCard({
 }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
+  const [isVideoLoading, setIsVideoLoading] = useState(!!video);
 
   useEffect(() => {
     const videoElement = videoRef.current;
     const card = cardRef.current;
 
     if (!videoElement || !card || !video) return;
+
+    // Set initial loading state
+    setIsVideoLoading(true);
+
+    const handleCanPlayThrough = () => {
+      setIsVideoLoading(false);
+    };
+
+    const handleLoadedData = () => {
+      setIsVideoLoading(false);
+    };
 
     const handleMouseEnter = () => {
       if (videoElement.readyState >= 3) {
@@ -77,11 +89,22 @@ export function ProjectCard({
       videoElement.pause();
     };
 
-    // Attach listeners to the entire card
+    // Add event listeners for video loading states
+    videoElement.addEventListener("canplaythrough", handleCanPlayThrough);
+    videoElement.addEventListener("loadeddata", handleLoadedData);
+
+    // Attach listeners to the entire card for hover effects
     card.addEventListener("mouseenter", handleMouseEnter);
     card.addEventListener("mouseleave", handleMouseLeave);
 
+    // Handle video that's already cached and loaded
+    if (videoElement.readyState >= 3) {
+      setIsVideoLoading(false);
+    }
+
     return () => {
+      videoElement.removeEventListener("canplaythrough", handleCanPlayThrough);
+      videoElement.removeEventListener("loadeddata", handleLoadedData);
       card.removeEventListener("mouseenter", handleMouseEnter);
       card.removeEventListener("mouseleave", handleMouseLeave);
     };
@@ -100,15 +123,26 @@ export function ProjectCard({
             title="View project"
           >
             {video && (
-              <video
-                ref={videoRef}
-                src={video}
-                loop
-                muted
-                playsInline
-                preload="auto"
-                className="w-full h-full object-cover object-top"
-              />
+              <>
+                {/* Skeleton loader */}
+                {isVideoLoading && (
+                  <div className="absolute inset-0 bg-gray-200 dark:bg-gray-800 animate-pulse flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full border-4 border-gray-300 dark:border-gray-600 border-t-gray-400 dark:border-t-gray-500 animate-spin" />
+                  </div>
+                )}
+                <video
+                  ref={videoRef}
+                  src={video}
+                  loop
+                  muted
+                  playsInline
+                  preload="auto"
+                  className={cn(
+                    "w-full h-full object-cover object-top transition-opacity duration-300",
+                    isVideoLoading ? "opacity-0" : "opacity-100"
+                  )}
+                />
+              </>
             )}
             {image && !video && (
               <Image
