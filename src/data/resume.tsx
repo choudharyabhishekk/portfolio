@@ -158,7 +158,8 @@ export const DATA = {
         "Convex database",
         "Stripe API",
       ],
-      // image: "/PDF.jpg",
+      image: "",
+
       video: "/aipdf.mp4",
       links: [
         {
@@ -179,7 +180,7 @@ export const DATA = {
       active: true,
       description:
         "Developed a full-stack internship platform that enables students to apply to internships and track their applications. ",
-      // image: "/internship.png",
+      image: "",
       video: "/internship.mp4",
 
       technologies: [
@@ -225,6 +226,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
+      video: "",
       image: "/store.png",
     },
     {
@@ -240,6 +242,7 @@ export const DATA = {
         "Firebase Auth",
       ],
       image: "/android.png",
+      video: "",
       links: [
         {
           type: "GitHub",

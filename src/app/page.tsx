@@ -147,72 +147,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        {/* <section id="skills">
-          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
-            <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <h2 className="text-xl font-bold mb-3 ">Skills & Technologies</h2>
-            </BlurFade>
 
-            <div className="flex flex-wrap gap-2 justify-items-center">
-              <BlurFade delay={BLUR_FADE_DELAY * 9}>
-                <div className="flex gap-2 items-center">
-                  <CodeXml size={18} />
-                  <h2 className="text-md w-28 font-bold ">Languages</h2>
-                </div>
-              </BlurFade>
-              {DATA.languages.map((skill, id) => (
-                <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <Badge variant="secondary" className="cursor-pointer">
-                    {skill}
-                  </Badge>
-                </BlurFade>
-              ))}
-            </div>
-
-            <div className="flex flex-row gap-2 my-2">
-              <BlurFade delay={BLUR_FADE_DELAY * 9}>
-                <div className="flex gap-2 items-center">
-                  <Hammer size={18} />
-                  <h2 className="text-md w-28 font-bold">Technologies</h2>
-                </div>
-              </BlurFade>
-
-              <div className="flex flex-wrap gap-2">
-                {DATA.technologies.map((skill, id) => (
-                  <BlurFade
-                    key={skill}
-                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-                  >
-                    <Badge variant="secondary" className="cursor-pointer">
-                      {skill}
-                    </Badge>
-                  </BlurFade>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex justify-items-center  gap-2 ">
-              <BlurFade delay={BLUR_FADE_DELAY * 9}>
-                <div className="flex gap-2 items-center">
-                  <Cog size={18} />
-                  <h2 className="text-md w-28 font-bold ">Concepts</h2>
-                </div>
-              </BlurFade>
-              <div className="flex flex-wrap gap-2">
-                {DATA.concepts.map((skill, id) => (
-                  <BlurFade
-                    key={skill}
-                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-                  >
-                    <Badge variant="secondary" className="cursor-pointer">
-                      {skill}
-                    </Badge>
-                  </BlurFade>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section> */}
         <section id="skills">
           <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
