@@ -140,6 +140,7 @@ export default function Page() {
                     description={project.description}
                     tags={project.technologies}
                     image={project.image}
+                    thumbnail={project?.thumbnail}
                     video={project.video}
                     links={project.links}
                   />

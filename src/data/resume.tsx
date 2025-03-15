@@ -147,6 +147,7 @@ export const DATA = {
     {
       title: "AI PDF Notes",
       href: "https://aipdfnotes.vercel.app/",
+      thumbnail: "/pdf-thumb.png",
       active: true,
       description:
         "Built an AI-powered PDF Chat Tool allowing users to upload PDFs, ask questions, take notes, and save them as documents",
@@ -182,6 +183,7 @@ export const DATA = {
         "Developed a full-stack internship platform that enables students to apply to internships and track their applications. ",
       image: "",
       video: "/internship.mp4",
+      thumbnail: "/internship-thumb.png",
 
       technologies: [
         "React",
@@ -227,6 +229,7 @@ export const DATA = {
         },
       ],
       video: "",
+      thumbnail: "",
       image: "/store.png",
     },
     {
@@ -243,6 +246,8 @@ export const DATA = {
       ],
       image: "/android.png",
       video: "",
+      thumbnail: "",
+
       links: [
         {
           type: "GitHub",

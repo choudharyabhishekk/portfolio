@@ -24,6 +24,7 @@ interface Props {
   link?: string;
   image?: string;
   video?: string;
+  thumbnail?: string; // New prop for thumbnail image
   links?: readonly {
     icon: React.ReactNode;
     type: string;
@@ -41,6 +42,7 @@ export function ProjectCard({
   link,
   image,
   video,
+  thumbnail, // Added thumbnail prop
   links,
   className,
 }: Props) {
@@ -124,12 +126,25 @@ export function ProjectCard({
           >
             {video && (
               <>
-                {/* Skeleton loader */}
-                {isVideoLoading && (
+                {/* Show thumbnail instead of skeleton loader */}
+                {isVideoLoading && thumbnail && (
+                  <Image
+                    src={thumbnail}
+                    alt={`${title} thumbnail`}
+                    width={400}
+                    height={400}
+                    className="w-full h-full object-cover object-top"
+                    style={{ objectFit: "cover" }}
+                  />
+                )}
+
+                {/* Fallback skeleton loader if no thumbnail is provided */}
+                {isVideoLoading && !thumbnail && (
                   <div className="absolute inset-0 bg-gray-200 dark:bg-gray-800 animate-pulse flex items-center justify-center">
                     <div className="w-12 h-12 rounded-full border-4 border-gray-300 dark:border-gray-600 border-t-gray-400 dark:border-t-gray-500 animate-spin" />
                   </div>
                 )}
+
                 <video
                   ref={videoRef}
                   src={video}
