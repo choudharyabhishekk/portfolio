@@ -7,11 +7,15 @@ import { Badge } from "@/components/ui/badge";
 import { Spotlight } from "@/components/ui/spotlight";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import Image from "next/image";
+
 import {
+  BadgeCheck,
   CodeXml,
   Cog,
   FileCheck,
   Github,
+  GraduationCap,
   Hammer,
   Linkedin,
   Mail,
@@ -223,6 +227,48 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        <section id="certifications">
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <h2 className="text-xl font-bold mb-3">Certifications</h2>
+            </BlurFade>
+
+            {/* Certifications Section */}
+            <div className="flex flex-col md:flex-row gap-2">
+              <div className="flex flex-wrap gap-4">
+                {DATA.certifications.map((cert, id) => {
+                  return (
+                    <BlurFade
+                      key={cert.name}
+                      delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                    >
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        title="view credentials"
+                      >
+                        <Badge
+                          variant={"secondary"}
+                          className="px-3 py-1 border cursor-pointer text-sm rounded-full flex items-center gap-2"
+                        >
+                          <Image
+                            src={cert.icon}
+                            width={20}
+                            height={20}
+                            alt={cert.name}
+                          />
+
+                          {cert.name}
+                        </Badge>
+                      </a>
+                    </BlurFade>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="work">
           <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -248,6 +294,7 @@ export default function Page() {
             ))}
           </div>
         </section>
+
         <section id="education">
           <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
