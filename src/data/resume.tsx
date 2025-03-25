@@ -162,7 +162,7 @@ export const DATA = {
     },
     {
       icon: "/ibm.png",
-      name: "Containers with Docker, Kubernetes & OpenShift",
+      name: "Container & Kubernetes Essentials",
       link: "https://www.credly.com/badges/ba812a77-374d-4565-85e2-f33340a3d175",
     },
 
