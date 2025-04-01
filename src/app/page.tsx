@@ -250,7 +250,7 @@ export default function Page() {
                       >
                         <Badge
                           variant={"secondary"}
-                          className="px-3 py-1 border cursor-pointer text-sm rounded-full flex items-center gap-2"
+                          className="flex-1 h-8 w-80 px-2 md:px-3 py-1 border cursor-pointer text-sm flex items-center gap-2"
                         >
                           <Image
                             src={cert.icon}

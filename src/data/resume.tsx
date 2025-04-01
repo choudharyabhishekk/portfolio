@@ -8,28 +8,6 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/kitchener",
   description: "Meta Certified Full Stack Developer, Building Cool Things",
 
-  skills: [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "MongoDB",
-    "PostgreSQL",
-    "Prisma ORM",
-    "Docker",
-    "GraphQL",
-    "Tailwind CSS",
-    "SASS",
-    "C#",
-    "PHP",
-    "Kotlin",
-    "Serverless backends",
-    "Headless CMS",
-    "Cloudflare Functions",
-    "WordPress",
-    "Figma",
-    "Photoshop",
-  ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "Choudharyabhishekk@gmail.com",
@@ -108,9 +86,9 @@ export const DATA = {
   languages: [
     "TypeScript",
     "JavaScript",
-    "Kotlin",
     "C#",
     "PHP",
+    "Kotlin",
     "HTML5",
     "CSS3",
     "SQL",
@@ -118,6 +96,11 @@ export const DATA = {
   technologies: [
     "React",
     "Next.js",
+    "Tailwind CSS",
+    "SASS",
+    "Sanity",
+    "Storybook",
+    "Postman",
     "Node.js",
     "MongoDB",
     "PostgreSQL",
@@ -127,10 +110,7 @@ export const DATA = {
     "Android Studio",
     "AWS",
     "WordPress",
-    "Tailwind CSS",
-    "SASS",
     "Git",
-    "CMS",
     "Figma",
   ],
   concepts: [
@@ -242,13 +222,44 @@ export const DATA = {
         },
       ],
     },
+    {
+      title: "Flipp Redesign",
+      href: "https://flipp.abhix.io/",
+      active: true,
+      description:
+        "Redesigned the Flipp website from the ground up using React, implementing mobile-first design principles and interactive components.",
+      image: "/flipp.png",
+      video: "",
+      thumbnail: "/flipp-thumb.png",
 
+      technologies: [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Flexbox",
+        "CSS Grid",
+        "SEO",
+        "WCAG",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://flipp.abhix.io/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/choudharyabhishekk/Flipp-Redesign",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
     {
       title: "Online Shopping Platform: ASP.NET Core",
       href: "https://github.com/choudharyabhishekk/online-store?tab=readme-ov-file",
       active: true,
       description:
-        "A full stack e-commerce platform with a user-friendly customer interface, an admin panel for store management, and a mobile-responsive design using Bootstrap.",
+        "A full stack e-commerce platform with a customer interface, an admin panel for store management, and a mobile-responsive design using Bootstrap.",
       technologies: [
         "ASP.NET Core",
         "EF Core",
