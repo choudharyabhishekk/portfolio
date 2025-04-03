@@ -33,7 +33,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "mailto:Choudharyabhishekk@gmail.com",
+        url: "mailto:choudharyabhishekk@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
@@ -41,18 +41,6 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "Marketors.in",
-      href: "https://marketors.in",
-      badges: [],
-      location: "Mumbai, India",
-      title: "Co-founder, Lead Developer",
-      logoUrl: "/marketors.png",
-      start: "Nov 2021",
-      end: "Aug 2023",
-      description:
-        "Founded a digital marketing agency, providing services like content marketing, SEO, and web development to clients.",
-    },
     {
       company: "Geeksgyaan.com",
       href: "https://geeksgyaan.com",
@@ -65,6 +53,18 @@ export const DATA = {
       end: "Aug 2023",
       description:
         "Developed a popular tech website using WordPress CMS, driving more than 250,000 page views per month.",
+    },
+    {
+      company: "Marketors.in",
+      href: "https://marketors.in",
+      badges: [],
+      location: "Mumbai, India",
+      title: "Co-founder, Lead Developer",
+      logoUrl: "/marketors.png",
+      start: "Nov 2021",
+      end: "Aug 2023",
+      description:
+        "Founded a digital marketing agency, providing services like content marketing, SEO, and web development to clients.",
     },
   ],
   education: [
@@ -192,7 +192,7 @@ export const DATA = {
     },
     {
       title: "Internship Platform",
-      href: "https://internship-i37i.onrender.com/",
+      href: "https://internship.abhix.io/",
       active: true,
       description:
         "Developed a full-stack internship platform that enables students to apply to internships and track their applications. ",

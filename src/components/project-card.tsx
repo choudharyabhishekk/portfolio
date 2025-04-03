@@ -123,6 +123,7 @@ export function ProjectCard({
             href={href || "#"}
             className={cn("block cursor-pointer w-full h-full", className)}
             title="View project"
+            target="_blank"
           >
             {video && (
               <>
