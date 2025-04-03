@@ -47,7 +47,7 @@ export const DATA = {
       badges: [],
       location: "Mumbai, India",
       title: "Co-founder, Lead Developer",
-      logoUrl: "",
+      logoUrl: "/marketors.png",
       start: "Nov 2021",
       end: "Aug 2023",
       description:
@@ -126,13 +126,8 @@ export const DATA = {
   certifications: [
     {
       icon: "/meta.png", // Replace with the specific Lucide icon name for Meta, if available
-      name: "Front-End Developer Specialization",
+      name: "Front-End Developer Certificate",
       link: "https://www.credly.com/badges/52b93f15-9fb9-4bfe-a271-155a4e229fd9/public_url",
-    },
-    {
-      icon: "/meta.png", // Example: use a relevant Lucide icon for UX/UI
-      name: "Principles of UX/UI Design",
-      link: "https://www.coursera.org/account/accomplishments/verify/JXUJ8TMPFBS1",
     },
 
     {
@@ -141,20 +136,25 @@ export const DATA = {
       link: "https://www.apollographql.com/tutorials/certifications/13f6f834-374e-48cc-b64a-709818b2c0e2",
     },
     {
+      icon: "/meta.png", // Example: use a relevant Lucide icon for UX/UI
+      name: "Principles of UX/UI Design",
+      link: "https://www.coursera.org/account/accomplishments/verify/JXUJ8TMPFBS1",
+    },
+    {
       icon: "/ibm.png",
       name: "Container & Kubernetes Essentials",
       link: "https://www.credly.com/badges/ba812a77-374d-4565-85e2-f33340a3d175",
     },
 
     {
-      icon: "/ibm.png", //
-      name: " AI Applications with Python and Flask",
-      link: "https://www.credly.com/badges/d1485cca-df38-4105-a808-7e7d1c2453f6/public_url",
+      icon: "/meta.png", //
+      name: "Version Control: Git",
+      link: "https://www.coursera.org/account/accomplishments/verify/NJL2NI2BBPYB",
     },
     {
-      icon: "/meta.png", //
-      name: "Version Control",
-      link: "https://www.coursera.org/account/accomplishments/verify/NJL2NI2BBPYB",
+      icon: "/ibm.png", //
+      name: " AI Applications: Python & Flask",
+      link: "https://www.credly.com/badges/d1485cca-df38-4105-a808-7e7d1c2453f6/public_url",
     },
   ],
 

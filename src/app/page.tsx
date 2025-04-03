@@ -250,7 +250,7 @@ export default function Page() {
                       >
                         <Badge
                           variant={"secondary"}
-                          className="flex-1 h-8 w-80 px-2 md:px-3 py-1 border cursor-pointer text-sm flex items-center gap-2"
+                          className={`flex-1 h-10 w-[250px] px-2 md:px-2 py-1 rounded-lg border cursor-pointer text-xs flex items-center gap-2`}
                         >
                           <Image
                             src={cert.icon}
@@ -319,7 +319,7 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl  rounded-t-none lg:rounded-t-xl">
+          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
               <div className="space-y-3">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -343,19 +343,24 @@ export default function Page() {
                     href="https://linkedin.com/in/choudharyabhishekk"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-neutral-500 transition-colors"
+                    className="flex items-center gap-2 px-5 py-2 bg-white text-slate-800 border rounded-full hover:bg-white/90"
                     aria-label="LinkedIn"
                   >
-                    <Linkedin size={20} />
+                    LinkedIn
                   </a>
-
-                  <a
-                    href="mailto:choudharyabhishekk@gmail.com"
-                    className="hover:text-neutral-500 transition-colors"
-                    aria-label="Email"
+                  <ShineBorder
+                    className="inline-block" // This ensures proper sizing
+                    color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
+                    borderRadius={9999}
                   >
-                    <Mail size={20} />
-                  </a>
+                    <a
+                      href="mailto:choudharyabhishekk@gmail.com"
+                      className="flex items-center gap-2 px-8 py-2 rounded-lg font-semibold hover:transition-colors"
+                      aria-label="Email"
+                    >
+                      Email
+                    </a>
+                  </ShineBorder>
                 </div>
               </div>
             </BlurFade>
