@@ -10,15 +10,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 import {
-  BadgeCheck,
   CodeXml,
   Cog,
+  DatabaseZap,
   FileCheck,
+  FolderSync,
   Github,
   GraduationCap,
   Hammer,
   Linkedin,
   Mail,
+  MonitorSmartphone,
+  Wallpaper,
 } from "lucide-react";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { MagicCard } from "@/components/magicui/magic-card";
@@ -183,11 +186,12 @@ export default function Page() {
             </div>
 
             {/* Technologies Section */}
+
             <div className="flex flex-col md:flex-row  gap-2 mb-4">
               <BlurFade delay={BLUR_FADE_DELAY * 9}>
                 <div className="flex w-36 gap-2 items-center">
                   <Hammer size={18} />
-                  <h2 className="text-mdfont-bold">Technologies</h2>
+                  <h2 className="text-md font-bold">Technologies</h2>
                 </div>
               </BlurFade>
               <div className="flex flex-wrap gap-2">
@@ -203,6 +207,48 @@ export default function Page() {
                 ))}
               </div>
             </div>
+
+            {/* <div className="flex flex-col md:flex-row  gap-2 mb-4">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex w-36 gap-2 items-center">
+                  <MonitorSmartphone size={18} />
+                  <h2 className="text-md font-bold">Frontend</h2>
+                </div>
+              </BlurFade>
+              <div className="flex flex-wrap gap-2">
+                {DATA.technologies.slice(0, 8).map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div> 
+
+            {/* <div className="flex flex-col md:flex-row  gap-2 mb-4">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex w-36 gap-2 items-center">
+                  <DatabaseZap size={18} />
+                  <h2 className="text-md font-bold">Backend</h2>
+                </div>
+              </BlurFade>
+              <div className="flex flex-wrap gap-2">
+                {DATA.technologies.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge variant="secondary" className="cursor-pointer">
+                      {skill}
+                    </Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div> */}
 
             {/* Concepts Section */}
             <div className="flex flex-col md:flex-row   gap-2">
