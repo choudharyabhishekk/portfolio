@@ -41,30 +41,42 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "Skill4Skill.ca",
-      href: "https://Skill4Skill.ca",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Front End Developer Volunteer",
-      logoUrl: "/skill.png",
-      start: "April 2025",
-      end: "Present",
-      description:
-        "Developed, maintained, and debugged front-end code for Skill4Skill, a platform enabling skill exchange without financial barriers, using React.js, TypeScript, Node.js, and Next.js.",
-    },
+    // {
+    //   company: "Skill4Skill.ca",
+    //   href: "https://Skill4Skill.ca",
+    //   badges: [],
+    //   location: "Toronto, ON",
+    //   title: "Front End Developer Volunteer",
+    //   logoUrl: "/skill.png",
+    //   start: "April 2025",
+    //   end: "Present",
+    //   description:
+    //     "Developed, maintained, and debugged front-end code for Skill4Skill, a platform enabling skill exchange without financial barriers, using React.js, TypeScript, Node.js, and Next.js.",
+    // },
     {
       company: "Geeksgyaan.com",
       href: "https://geeksgyaan.com",
       badges: [],
       location: "Mumbai, India",
-      title: "Founder & WordPress Developer",
+      title: "Founder",
       logoUrl:
         "https://geeksgyaan.com/wp-content/uploads/2022/02/gg-favicon.png",
       start: "Dec 2020",
       end: "Aug 2023",
       description:
         "Developed a popular tech website using WordPress CMS, driving more than 250,000 page views per month.",
+    },
+    {
+      company: "Marketors.in",
+      href: "https://marketors.in",
+      badges: [],
+      location: "Mumbai, India",
+      title: "Content Marketing Specialist",
+      logoUrl: "/marketors.png",
+      start: "Nov 2021",
+      end: "Sep 2023",
+      description:
+        "Co-founded a B2B digital marketing agency providing services like Content Marketing & Search Engine Optimization & Website development.",
     },
   ],
   education: [
