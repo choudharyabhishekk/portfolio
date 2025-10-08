@@ -39,12 +39,12 @@ const Nav = () => {
           >
             <li className="text-lg font-bold hidden md:block">
               <a href="/">Abhix</a>
+            </li>{" "}
+            <li className="hover:text-neutral-500 w-full md:w-auto text-center">
+              <a href="#work">Experience</a>
             </li>
             <li className="hover:text-neutral-500 w-full md:w-auto text-center">
               <a href="#projects">Projects</a>
-            </li>
-            <li className="hover:text-neutral-500 w-full md:w-auto text-center">
-              <a href="#work">Experience</a>
             </li>
             <li className="hover:text-neutral-500 w-full md:w-auto text-center">
               <a href="#contact">Contact</a>

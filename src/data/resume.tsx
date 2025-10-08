@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { Badge, HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Abhishek Choudhary",
   initials: "AC",
@@ -39,39 +39,76 @@ export const DATA = {
       },
     },
   },
-
-  work: [
-    // {
-    //   company: "Skill4Skill.ca",
-    //   href: "https://Skill4Skill.ca",
-    //   badges: [],
-    //   location: "Toronto, ON",
-    //   title: "Front End Developer Volunteer",
-    //   logoUrl: "/skill.png",
-    //   start: "April 2025",
-    //   end: "Present",
-    //   description:
-    //     "Developed, maintained, and debugged front-end code for Skill4Skill, a platform enabling skill exchange without financial barriers, using React.js, TypeScript, Node.js, and Next.js.",
-    // },
+  ventures: [
+    {
+      company: "Marketors.in",
+      href: "https://www.marketors.in/",
+      badges: [],
+      location: "",
+      title: "",
+      logoUrl: "/marketors.png",
+      start: "",
+      end: "Website",
+      description:
+        "Built a successful digital marketing agency delivering content marketing and SEO services to businesses all around the world.",
+    },
+    {
+      company: "Astro Bytes",
+      href: "https://www.youtube.com/AstroBytes",
+      badges: [],
+      location: "",
+      title: "",
+      logoUrl: "/astrobytes.png",
+      start: "",
+      end: "Website",
+      description:
+        "A YouTube channel built to share my love for astrophysics, astronomy, and cosmology, scaled to 25,000+ subscribers in just 8 months.",
+    },
     {
       company: "Geeksgyaan.com",
-      href: "https://geeksgyaan.com",
+      href: "https://www.geeksgyaan.com/",
       badges: [],
-      location: "Mumbai, India",
-      title: "Founder",
+      location: "",
+      title: "",
       logoUrl:
-        "https://geeksgyaan.com/wp-content/uploads/2022/02/gg-favicon.png",
-      start: "Dec 2020",
-      end: "Aug 2023",
+        "https://geeksgyaan.com/wp-content/uploads/2022/02/cropped-gg-favicon.png",
+      start: "",
+      end: "Website",
       description:
-        "Developed a popular tech website using WordPress CMS, driving more than 250,000 page views per month.",
+        "Started as a hobby to explore my passion for building websites and evolved into a tech news platform, attracting over 300,000+ users in 2024.",
+    },
+  ],
+  work: [
+    {
+      company: "Nelson",
+      href: "https://www.nelson.com/",
+      badges: [],
+      location: "Toronto, ON",
+      title: "Digital Content Developer",
+      logoUrl: "/nelson.png",
+      start: "June 2025",
+      end: "Present",
+      description:
+        "Design and develop engaging web content and interactive multimedia using HTML, JavaScript, and other relevant technologies.",
+    },
+    {
+      company: "Skill4skill.ca",
+      href: "https://skill4skill.ca/",
+      badges: [],
+      location: "Toronto, ON",
+      title: "Front End Developer",
+      logoUrl: "/skill4skill.png",
+      start: "April 2025",
+      end: "June 2025",
+      description:
+        "Engineered front-end with React, TypeScript, and Next.js, led UI architecture, and implemented real-time messaging with Ably/WebSockets.",
     },
     {
       company: "Marketors.in",
       href: "https://marketors.in",
       badges: [],
       location: "Mumbai, India",
-      title: "Content Marketing Specialist",
+      title: "Cofounder",
       logoUrl: "/marketors.png",
       start: "Nov 2021",
       end: "Sep 2023",
@@ -137,35 +174,40 @@ export const DATA = {
 
   certifications: [
     {
-      icon: "/meta.png", // Replace with the specific Lucide icon name for Meta, if available
+      icon: "/meta.png",
       name: "Front-End Developer Certificate",
       link: "https://www.credly.com/badges/52b93f15-9fb9-4bfe-a271-155a4e229fd9/public_url",
     },
 
     {
-      icon: "/apollo.png", // Example: use a relevant Lucide icon for GraphQL
+      icon: "/apollo.png",
       name: "GraphQL Developer: Associate",
       link: "https://www.apollographql.com/tutorials/certifications/13f6f834-374e-48cc-b64a-709818b2c0e2",
     },
     {
-      icon: "/meta.png", // Example: use a relevant Lucide icon for UX/UI
+      icon: "/meta.png",
+      name: "Advance React",
+      link: "https://www.coursera.org/account/accomplishments/verify/UYX2BUHD3Z71?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+    },
+
+    {
+      icon: "/meta.png",
       name: "Principles of UX/UI Design",
       link: "https://www.coursera.org/account/accomplishments/verify/JXUJ8TMPFBS1",
     },
     {
       icon: "/ibm.png",
-      name: "Container & Kubernetes Essentials",
+      name: "Container & Kubernetes Essentials ",
       link: "https://www.credly.com/badges/ba812a77-374d-4565-85e2-f33340a3d175",
     },
-
     {
-      icon: "/meta.png", //
+      icon: "/meta.png",
       name: "Version Control: Git",
       link: "https://www.coursera.org/account/accomplishments/verify/NJL2NI2BBPYB",
     },
     {
-      icon: "/ibm.png", //
-      name: " AI Applications: Python & Flask",
+      icon: "/ibm.png",
+      name: "Python for AI and Application Development",
       link: "https://www.credly.com/badges/d1485cca-df38-4105-a808-7e7d1c2453f6/public_url",
     },
   ],
@@ -198,6 +240,39 @@ export const DATA = {
         {
           type: "GitHub",
           href: "https://github.com/choudharyabhishekk/ai-pdf",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+    },
+
+    {
+      title: "Flipp Redesign",
+      href: "https://flipp.abhix.io/",
+      active: true,
+      description:
+        "Redesigned the Flipp website from the ground up using React, implementing mobile-first design principles and interactive components.",
+      image: "/flipp.png",
+      video: "",
+      thumbnail: "/flipp-thumb.png",
+
+      technologies: [
+        "React",
+        "JavaScript",
+        "CSS",
+        "Flexbox",
+        "CSS Grid",
+        "SEO",
+        "WCAG",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://flipp.abhix.io/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/choudharyabhishekk/Flipp-Redesign",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -235,67 +310,11 @@ export const DATA = {
       ],
     },
     {
-      title: "Flipp Redesign",
-      href: "https://flipp.abhix.io/",
-      active: true,
-      description:
-        "Redesigned the Flipp website from the ground up using React, implementing mobile-first design principles and interactive components.",
-      image: "/flipp.png",
-      video: "",
-      thumbnail: "/flipp-thumb.png",
-
-      technologies: [
-        "React",
-        "JavaScript",
-        "CSS",
-        "Flexbox",
-        "CSS Grid",
-        "SEO",
-        "WCAG",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://flipp.abhix.io/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/choudharyabhishekk/Flipp-Redesign",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-    },
-    {
-      title: "Online Shopping Platform: ASP.NET Core",
-      href: "https://github.com/choudharyabhishekk/online-store?tab=readme-ov-file",
-      active: true,
-      description:
-        "A full stack e-commerce platform with a customer interface, an admin panel for store management, and a mobile-responsive design using Bootstrap.",
-      technologies: [
-        "ASP.NET Core",
-        "EF Core",
-        "ASP.NET Identity",
-        "Bootstrap",
-        "C#",
-      ],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/choudharyabhishekk/online-store",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      video: "",
-      thumbnail: "",
-      image: "/store.png",
-    },
-    {
       title: "eCommerce Android App",
       href: "https://github.com/choudharyabhishekk/ecommerce",
       active: true,
       description:
-        "An eCommerce Android app where users can browse and shop for products, manage their cart, and complete secure checkouts, all while providing a responsive experience across various devices.",
+        "An eCommerce Android app where users can browse and shop for products, manage their cart, and complete secure checkouts.",
       technologies: [
         "Kotlin",
         "Android Studio",

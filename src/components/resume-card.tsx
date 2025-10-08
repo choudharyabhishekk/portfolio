@@ -72,7 +72,6 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-               
               </h3>
               <div className="text-xs hidden md:block sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
@@ -94,7 +93,7 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-base/relaxed">
+              <p className="text-muted-foreground md:text-base/relaxed lg:text-sm/relaxed xl:text-sm/relaxed">
                 {description}
               </p>
             </motion.div>
