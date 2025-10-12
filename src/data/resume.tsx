@@ -6,7 +6,7 @@ export const DATA = {
   url: "https://abhicodes.me",
   location: "Greater Toronto Area, ON",
   locationLink: "https://www.google.com/maps/place/kitchener",
-  description: "Meta Certified Full Stack Developer, Building Cool Things",
+  description: "Full Stack Developer, Webpreneur & Coffee Drinker",
 
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {

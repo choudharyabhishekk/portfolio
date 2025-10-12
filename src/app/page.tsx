@@ -38,7 +38,7 @@ export default function Page() {
         />
 
         <section id="hero">
-          <div className="mx-auto flex flex-col items-center w-full max-w-2xl space-y-8">
+          <div className="mx-auto flex justify-center flex-col items-center w-full max-w-3xl space-y-8 h-96  border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
             <div className="flex-col items-center flex space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
