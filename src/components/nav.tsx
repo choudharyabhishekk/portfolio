@@ -15,7 +15,7 @@ const Nav = () => {
     <BlurFade delay={0.03 * 5}>
       <nav aria-label="Main" data-orientation="horizontal" className="w-full ">
         <div
-          className={`relative flex flex-col md:flex-row max-w-3xl items-center justify-between mx-auto my-6 text-sm ${
+          className={`relative flex flex-col md:flex-row max-w-3xl items-center justify-between mx-auto mt-6 mb-2 text-sm ${
             isMenuOpen ? "rounded-3xl" : "rounded-2xl"
           }`}
         >
