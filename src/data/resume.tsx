@@ -6,7 +6,7 @@ export const DATA = {
   url: "https://abhicodes.me",
   location: "Greater Toronto Area, ON",
   locationLink: "https://www.google.com/maps/place/kitchener",
-  description: "Full Stack Developer, Webpreneur & Coffee Drinker",
+  description: "Full Stack Developer, Webpreneur, Coffee Drinker",
 
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -75,7 +75,7 @@ export const DATA = {
       start: "",
       end: "Website",
       description:
-        "Started as a hobby to explore my passion for building websites and evolved into a tech news platform, attracting over 300,000+ users in 2024.",
+        "Started as a hobby to explore my passion for building websites and evolved into a tech news platform, attracting over 300,000+ users per month.",
     },
   ],
   work: [
