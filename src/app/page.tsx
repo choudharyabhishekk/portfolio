@@ -33,7 +33,7 @@ export default function Page() {
       <Nav />
       <main className="flex flex-col min-h-[100dvh] space-y-10">
         <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
+          className="-top-40 left-0 md:left-60 md:-top-60"
           fill="white"
         />
 
