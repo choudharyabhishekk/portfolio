@@ -43,7 +43,7 @@ export default function Page() {
       <Nav />
       <main className="flex flex-col min-h-[100dvh] space-y-10 mt-10">
         <section id="hero">
-          <div className="mx-auto flex justify-center flex-col items-center w-full max-w-3xl space-y-8 h-96  border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
+          <div className="mx-auto flex justify-center flex-col items-center w-full max-w-3xl space-y-8 h-96  border-neutral-900 border border-dashed rounded-3xl backdrop-blur-md">
             <div className="flex-col items-center flex space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -91,7 +91,7 @@ export default function Page() {
           </div>
         </section>
         <section id="work" className="mt-4">
-          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
+          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-3xl backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <h2 className="text-xl font-bold">Work Experience</h2>
             </BlurFade>
@@ -129,7 +129,7 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
+            <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-3xl  backdrop-blur-md">
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
                 <h2 className="text-xl font-bold">Products</h2>
               </BlurFade>
@@ -177,7 +177,7 @@ export default function Page() {
         </section>
 
         <section id="skills">
-          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8 backdrop-blur-md">
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-3xl p-8 backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold mb-3">Skills & Technologies</h2>
             </BlurFade>
@@ -252,7 +252,7 @@ export default function Page() {
         </section>
 
         <section id="certifications">
-          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8 backdrop-blur-md">
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-3xl p-8 backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold mb-3">Certifications</h2>
             </BlurFade>
@@ -294,7 +294,7 @@ export default function Page() {
         </section>
 
         <section id="education">
-          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
+          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-3xl  backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className="text-xl font-bold">Education</h2>
             </BlurFade>
@@ -317,7 +317,7 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
+          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-3xl backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
               <div className="space-y-3">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
