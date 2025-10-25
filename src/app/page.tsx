@@ -25,20 +25,25 @@ import {
 } from "lucide-react";
 import { ShineBorder } from "@/components/magicui/shine-border";
 import { MagicCard } from "@/components/magicui/magic-card";
+import MouseRevealWrapper from "@/components/ui/mouse-reveal-bg";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <>
+    <MouseRevealWrapper
+      backgroundImage="/bg.jpg"
+      revealRadius={250}
+      smoothing={0.2}
+      initialOpacity={0.06} //
+    >
+      {/* <Spotlight
+        className="-top-60 left-0 md:left-60 md:-top-60"
+        fill="white"
+      /> */}
       <Nav />
-      <main className="flex flex-col min-h-[100dvh] space-y-10">
-        <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-60"
-          fill="white"
-        />
-
+      <main className="flex flex-col min-h-[100dvh] space-y-10 mt-10">
         <section id="hero">
-          <div className="mx-auto flex justify-center flex-col items-center w-full max-w-3xl space-y-8 h-96  border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
+          <div className="mx-auto flex justify-center flex-col items-center w-full max-w-3xl space-y-8 h-96  border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
             <div className="flex-col items-center flex space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -86,7 +91,7 @@ export default function Page() {
           </div>
         </section>
         <section id="work" className="mt-4">
-          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
+          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 5}>
               <h2 className="text-xl font-bold">Work Experience</h2>
             </BlurFade>
@@ -111,7 +116,7 @@ export default function Page() {
           </div>
         </section>
         <section id="projects">
-          <div className="space-y-12 w-full py-12">
+          <div className="space-y-12 w-full py-12 ">
             <BlurFade delay={BLUR_FADE_DELAY * 11}>
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
@@ -124,7 +129,7 @@ export default function Page() {
                 </div>
               </div>
             </BlurFade>
-            <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
+            <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
                 <h2 className="text-xl font-bold">Products</h2>
               </BlurFade>
@@ -172,7 +177,7 @@ export default function Page() {
         </section>
 
         <section id="skills">
-          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8 backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold mb-3">Skills & Technologies</h2>
             </BlurFade>
@@ -247,7 +252,7 @@ export default function Page() {
         </section>
 
         <section id="certifications">
-          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8">
+          <div className="flex max-w-4xl min-h-0 flex-col gap-y-3 mx-auto border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl p-8 backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold mb-3">Certifications</h2>
             </BlurFade>
@@ -289,7 +294,7 @@ export default function Page() {
         </section>
 
         <section id="education">
-          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
+          <div className="flex min-h-0 flex-col gap-y-3 max-w-4xl mx-auto p-8 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 7}>
               <h2 className="text-xl font-bold">Education</h2>
             </BlurFade>
@@ -312,7 +317,7 @@ export default function Page() {
           </div>
         </section>
         <section id="contact">
-          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl">
+          <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12 border-neutral-900 border border-dashed rounded-xl rounded-t-none lg:rounded-t-xl backdrop-blur-md">
             <BlurFade delay={BLUR_FADE_DELAY * 16}>
               <div className="space-y-3">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -337,7 +342,7 @@ export default function Page() {
                     href="https://linkedin.com/in/choudharyabhishekk"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
+                    className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border rounded-full hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
                     aria-label="LinkedIn Profile"
                   >
                     <svg
@@ -354,7 +359,7 @@ export default function Page() {
                     href="https://github.com/yourusername"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
+                    className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border  rounded-full hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
                     aria-label="GitHub Profile"
                   >
                     <svg
@@ -369,7 +374,7 @@ export default function Page() {
 
                   <a
                     href="mailto:choudharyabhishekk@gmail.com"
-                    className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border border-white/20 rounded-full hover:bg-white/20 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
+                    className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border  rounded-full hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
                     aria-label="Send Email"
                   >
                     <svg
@@ -393,6 +398,6 @@ export default function Page() {
           </div>
         </section>
       </main>
-    </>
+    </MouseRevealWrapper>
   );
 }

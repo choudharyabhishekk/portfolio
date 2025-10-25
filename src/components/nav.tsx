@@ -51,7 +51,7 @@ const Nav = () => {
             {/* Navigation items - Right side */}
             <ul
               data-orientation="horizontal"
-              className="flex flex-col md:flex-row list-none items-center border border-neutral-800 border-dashed px-5 py-2 rounded-2xl md:space-x-1 gap-4 md:gap-4 w-full md:w-auto"
+              className="flex flex-col md:flex-row list-none items-center border border-neutral-800 border-dashed px-5 py-2 rounded-2xl md:space-x-1 gap-4 md:gap-4 w-full md:w-auto backdrop-blur-md "
             >
               <li className="hover:text-neutral-500 w-full md:w-auto text-center">
                 <a href="#work">Experience</a>
