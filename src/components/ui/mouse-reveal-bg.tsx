@@ -65,7 +65,7 @@ export default function MouseRevealWrapper({
   return (
     <div
       ref={containerRef}
-      className="relative w-full min-h-screen"
+      className="relative w-full min-h-screen "
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >

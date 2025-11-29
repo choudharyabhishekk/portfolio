@@ -32,16 +32,16 @@ export default function Page() {
   return (
     <MouseRevealWrapper
       backgroundImage="/bg.jpg"
-      revealRadius={250}
+      revealRadius={0}
       smoothing={0.2}
-      initialOpacity={0.06} //
+      initialOpacity={0.09} //
     >
       {/* <Spotlight
         className="-top-60 left-0 md:left-60 md:-top-60"
         fill="white"
       /> */}
       <Nav />
-      <main className="flex flex-col min-h-[100dvh] space-y-10 mt-10">
+      <main className="flex flex-col min-h-[100dvh] space-y-10 mt-10 ">
         <section id="hero">
           <div className="mx-auto flex justify-center flex-col items-center w-full max-w-3xl space-y-8 h-96  border-neutral-900 border border-dashed rounded-3xl backdrop-blur-md">
             <div className="flex-col items-center flex space-y-1.5">
