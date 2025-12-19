@@ -34,7 +34,7 @@ export default function Page() {
       backgroundImage="/bg.jpg"
       revealRadius={0}
       smoothing={0.2}
-      initialOpacity={0.09} //
+      initialOpacity={0.08} //
     >
       {/* <Spotlight
         className="-top-60 left-0 md:left-60 md:-top-60"
@@ -356,7 +356,7 @@ export default function Page() {
                   </a>
 
                   <a
-                    href="https://github.com/yourusername"
+                    href="https://github.com/choudharyabhishekk"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border  rounded-full hover:bg-white/10 hover:border-white/30 transition-all duration-300 backdrop-blur-sm"
