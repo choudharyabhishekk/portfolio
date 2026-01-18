@@ -247,7 +247,7 @@ export const DATA = {
 
     {
       title: "Flipp Redesign",
-      href: "https://flipp.abhix.io/",
+      href: "https://papayawhip-termite-896670.hostingersite.com/",
       active: true,
       description:
         "Redesigned the Flipp website from the ground up using React, implementing mobile-first design principles and interactive components.",
