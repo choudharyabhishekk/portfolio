@@ -18,12 +18,14 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
+  location?: string;
 }
 export const ResumeCard = ({
   logoUrl,
   altText,
   title,
   subtitle,
+  location,
   href,
   badges,
   period,
@@ -73,11 +75,17 @@ export const ResumeCard = ({
                   </span>
                 )}
               </h3>
+
               <div className="text-xs hidden md:block sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
+            <div className="flex items-center justify-between gap-x-2 text-base">
+              {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
+              <div className="font-sans text-sm text-muted-foreground">
+                {location}
+              </div>
+            </div>
           </CardHeader>
           {description && (
             <motion.div

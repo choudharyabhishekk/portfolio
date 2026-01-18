@@ -89,13 +89,13 @@ export const DATA = {
       start: "June 2025",
       end: "Present",
       description:
-        "Design and develop engaging web content and interactive multimedia using HTML, JavaScript, and other relevant technologies.",
+        "Developed accessible and interactive web experiences for the Edwin app, helping improve how thousands of students across Canada engage with digital learning.",
     },
     {
       company: "Skill4skill.ca",
       href: "https://skill4skill.ca/",
       badges: [],
-      location: "Toronto, ON",
+      location: "Waterloo, ON",
       title: "Front End Developer",
       logoUrl: "/skill4skill.png",
       start: "April 2025",

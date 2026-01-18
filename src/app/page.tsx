@@ -107,6 +107,7 @@ export default function Page() {
                   title={work.company}
                   subtitle={work.title}
                   href={work.href}
+                  location={work.location}
                   badges={work.badges}
                   period={`${work.start} - ${work.end ?? "Present"}`}
                   description={work.description}
